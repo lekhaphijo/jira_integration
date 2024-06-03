@@ -1,0 +1,39 @@
+{
+    "dummy": [
+        {
+            "_id": "664cc0eb39d22fdc82420efc",
+            "Issue Key": "IN-2",
+            "Summary": "Build JIRA Integration API",
+            "Description": null,
+            "Status": "To Do",
+            "Assignee": "Unassigned",
+            "Comments": [
+                {
+                    "Author": "data science",
+                    "Created": "2024-05-21T21:11:57.437+0530",
+                    "Comment": "this is for testing…"
+                }
+            ]
+        },
+        {
+            "_id": "664cc0eb39d22fdc82420efd",
+            "Issue Key": "IN-1",
+            "Summary": "jira integration",
+            "Description": "build the system which can take the Jira issues and develop the code by understanding the summary.",
+            "Status": "To Do",
+            "Assignee": "data science",
+            "Comments": [
+                {
+                    "Author": "data science",
+                    "Created": "2024-05-20T22:54:37.247+0530",
+                    "Comment": "design the initial setup to fetch the information from Jira and store in DB"
+                },
+                {
+                    "Author": "data science",
+                    "Created": "2024-05-20T23:16:14.489+0530",
+                    "Comment": "test commet1"
+                }
+            ]
+        }
+    ]
+}
