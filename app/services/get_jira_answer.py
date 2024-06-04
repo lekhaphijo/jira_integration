@@ -1,6 +1,7 @@
 from jira import JIRA
 import pymongo
 import json
+import openai
 import app.config as cfg
 # Warning control
 import warnings
@@ -9,9 +10,14 @@ import os
 from utils import get_openai_api_key, get_serper_api_key
 from crewai import Agent, Task, Crew
 openai_api_key = get_openai_api_key()
-os.environ["OPENAI_MODEL_NAME"] = 'gpt-3.5-turbo'
+os.environ["OPENAI_MODEL_NAME"] = "gpt-4o" #'gpt-3.5-turbo'
 os.environ["SERPER_API_KEY"] = get_serper_api_key()
 os.environ['OPENAI_API_KEY'] = cfg.OPENAI_API_KEY
+
+
+
+
+os.environ['OPENAI_API_KEY'] = os.getenv("OPENAI_API_KEY")
 from crewai_tools import ScrapeWebsiteTool, SerperDevTool, DirectoryReadTool, FileReadTool
 search_tool = SerperDevTool()
 scrape_tool = ScrapeWebsiteTool()
@@ -137,7 +143,7 @@ def get_answer(que):
 
         tasks=[project_management_task],
 
-        manager_llm=ChatOpenAI(model="gpt-3.5-turbo",
+        manager_llm=ChatOpenAI(model= "gpt-4o", #"gpt-3.5-turbo",
                                temperature=0.7),
         # process=Process.hierarchical,
         verbose=True,

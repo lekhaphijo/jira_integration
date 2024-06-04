@@ -1,3 +1,6 @@
+import os
+import openai
+
 jira_api_token = 'ATATT3xFfGF0c3t6O0iWnSWXLJ28F37JHsbUCmeKFtONxbIwmduooWVBVAAuV-il5fMKqJGKRhv26igARUiRIHJaDSlFcYDeVdovGCHTCgPz0_VKEecc-c8vuDJpjTacLNs1UcJL8ZVdcPmN_6Qozpfg-swQ5ASwKU3RpP41IjC_zDpmJE_P074=1DA8FEA6'
     #'ATATT3xFfGF0yU9GJnlCjdwzIrrrpVaNBQUL1sLWfLuwPEgMRGMTn4c8gHWPvxRgk7KOrkzPa2LfCu4hhms8xiC-bIXIWeVt-oUE_jq1vRfF5yCzhs9743RfXUGRtU1VB6Hl0LSGAYswic8RP-4sc2dW4Os_DpkoXpk0W3tSd0IKGYxPQILKw0c=958E9A92'  # Replace with your real API token
 jira_url = 'https://blrinnovation.atlassian.net'
@@ -6,5 +9,8 @@ mongo_url = 'mongodb://localhost:27017/'  # Update with your MongoDB connection 
 mongo_db_name = 'jira_db'  # Update with your database name
 mongo_collection_name = 'jira_issues'  # Update with your collection name
 project_key = 'innovation'
-OPENAI_API_KEY='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'
+OPENAI_API_KEY='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'
 BASE_DIR="/Users/rajesh.kumar3/Desktop/synechron/projects/jira-integration"
+
+
+
