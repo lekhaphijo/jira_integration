@@ -11,7 +11,7 @@ from crewai import Agent, Task, Crew
 openai_api_key = get_openai_api_key()
 os.environ["OPENAI_MODEL_NAME"] = 'gpt-3.5-turbo'
 os.environ["SERPER_API_KEY"] = get_serper_api_key()
-os.environ['OPENAI_API_KEY'] = "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"
+os.environ['OPENAI_API_KEY'] = cfg.OPENAI_API_KEY
 from crewai_tools import ScrapeWebsiteTool, SerperDevTool, DirectoryReadTool, FileReadTool
 search_tool = SerperDevTool()
 scrape_tool = ScrapeWebsiteTool()
