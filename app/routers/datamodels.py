@@ -10,3 +10,9 @@ class JiraIssues(BaseModel):
                                         example="innovation")
 
 
+class GetAnswer(BaseModel):
+    que: Optional[str] = Field(None,
+                                        example="what are the ticket are assigned to data science")
+
+
+

@@ -10,6 +10,7 @@ from fastapi.responses import StreamingResponse
 from typing import List
 import json
 from app.services.jira_issues import pull_jira_issue
+from app.services.get_jira_answer import get_answer
 
 
 
@@ -36,6 +37,10 @@ def pull_data(input: datamodels.JiraIssues):
     project_key = input.project_key
     return pull_jira_issue(jira_user_email,project_key)
 
+@router.post("/get_answer")
+def pull_data(input: datamodels.GetAnswer):
+    que = input.que
+    return get_answer(que)
 
 
 

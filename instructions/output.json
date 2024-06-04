@@ -1,11 +1,134 @@
 {
     "dummy": [
         {
-            "_id": "664f1e709ba2334379c1740a",
+            "_id": "665b39e2b9f65d41ff2edbd8",
+            "Issue Key": "IN-12",
+            "Summary": "As a developer write a stored proc to fetch all customer records with balance less than 10k",
+            "Description": null,
+            "Status": "To Do",
+            "Priority": "Medium",
+            "Created Date": "2024-05-26T11:01:46.872+0530",
+            "Due Date": "2024-06-06",
+            "Assignee": "Unassigned",
+            "Comments": []
+        },
+        {
+            "_id": "665b39e2b9f65d41ff2edbd9",
+            "Issue Key": "IN-11",
+            "Summary": "As a developer write logic to analyse customer data for KYC expiration in a month",
+            "Description": null,
+            "Status": "To Do",
+            "Priority": "Medium",
+            "Created Date": "2024-05-26T11:00:46.642+0530",
+            "Due Date": "2024-06-06",
+            "Assignee": "Unassigned",
+            "Comments": []
+        },
+        {
+            "_id": "665b39e2b9f65d41ff2edbda",
+            "Issue Key": "IN-10",
+            "Summary": "As a tester run test case for all apis and store the results in Zephyr",
+            "Description": null,
+            "Status": "To Do",
+            "Priority": "High",
+            "Created Date": "2024-05-26T10:55:53.992+0530",
+            "Due Date": "2024-07-16",
+            "Assignee": "Lekha Panikulangara",
+            "Comments": []
+        },
+        {
+            "_id": "665b39e2b9f65d41ff2edbdb",
+            "Issue Key": "IN-9",
+            "Summary": "As a tester write manual test case for all apis",
+            "Description": null,
+            "Status": "To Do",
+            "Priority": "Medium",
+            "Created Date": "2024-05-26T10:54:35.135+0530",
+            "Due Date": "2024-06-27",
+            "Assignee": "Sampada Korde",
+            "Comments": []
+        },
+        {
+            "_id": "665b39e2b9f65d41ff2edbdc",
+            "Issue Key": "IN-8",
+            "Summary": "As a developer write logic to read the customer profile from bulk excel loaded files and store ",
+            "Description": null,
+            "Status": "To Do",
+            "Priority": "Low",
+            "Created Date": "2024-05-26T10:53:35.688+0530",
+            "Due Date": "2024-06-27",
+            "Assignee": "data science",
+            "Comments": []
+        },
+        {
+            "_id": "665b39e2b9f65d41ff2edbdd",
+            "Issue Key": "IN-7",
+            "Summary": "As a devops engineer write anisible scripts for auto deployment for backen component",
+            "Description": null,
+            "Status": "To Do",
+            "Priority": "High",
+            "Created Date": "2024-05-26T10:32:59.640+0530",
+            "Due Date": "2024-06-10",
+            "Assignee": "data science",
+            "Comments": []
+        },
+        {
+            "_id": "665b39e2b9f65d41ff2edbde",
+            "Issue Key": "IN-6",
+            "Summary": "As a developer write authentication for all apis",
+            "Description": null,
+            "Status": "To Do",
+            "Priority": "High",
+            "Created Date": "2024-05-26T10:29:00.940+0530",
+            "Due Date": "2024-06-07",
+            "Assignee": "Sampada Korde",
+            "Comments": []
+        },
+        {
+            "_id": "665b39e2b9f65d41ff2edbdf",
+            "Issue Key": "IN-5",
+            "Summary": "Write swagger for all apis ",
+            "Description": "Application has 5 apis\n\nCreate swagger for testing these",
+            "Status": "To Do",
+            "Priority": "Medium",
+            "Created Date": "2024-05-26T10:27:51.344+0530",
+            "Due Date": "2024-05-22",
+            "Assignee": "Lekha Panikulangara",
+            "Comments": []
+        },
+        {
+            "_id": "665b39e2b9f65d41ff2edbe0",
+            "Issue Key": "IN-4",
+            "Summary": "As a developer write unit test for Jira integration task",
+            "Description": null,
+            "Status": "To Do",
+            "Priority": "Medium",
+            "Created Date": "2024-05-26T10:25:39.685+0530",
+            "Due Date": "2024-05-24",
+            "Assignee": "Lekha Panikulangara",
+            "Comments": []
+        },
+        {
+            "_id": "665b39e2b9f65d41ff2edbe1",
+            "Issue Key": "IN-3",
+            "Summary": "As a analyst define the workflow for the business flow for automating KYC",
+            "Description": null,
+            "Status": "To Do",
+            "Priority": "High",
+            "Created Date": "2024-05-25T21:43:35.575+0530",
+            "Due Date": "2024-05-30",
+            "Assignee": "Sampada Korde",
+            "Comments": []
+        },
+        {
+            "_id": "665b39e2b9f65d41ff2edbe2",
             "Issue Key": "IN-2",
             "Summary": "Build JIRA Integration API",
             "Description": null,
             "Status": "To Do",
+            "Priority": "Medium",
+            "Created Date": "2024-05-20T23:06:55.746+0530",
+            "Due Date": null,
             "Assignee": "Unassigned",
             "Comments": [
                 {
@@ -16,11 +139,14 @@
             ]
         },
         {
-            "_id": "664f1e709ba2334379c1740b",
+            "_id": "665b39e2b9f65d41ff2edbe3",
             "Issue Key": "IN-1",
             "Summary": "jira integration",
             "Description": "build the system which can take the Jira issues and develop the code by understanding the summary.",
             "Status": "To Do",
+            "Priority": "Highest",
+            "Created Date": "2024-03-22T10:21:15.378+0530",
+            "Due Date": null,
             "Assignee": "data science",
             "Comments": [
                 {

@@ -2,6 +2,19 @@ from jira import JIRA
 import pymongo
 import json
 import app.config as cfg
+# Warning control
+import warnings
+warnings.filterwarnings('ignore')
+import os
+from utils import get_openai_api_key, get_serper_api_key
+from crewai import Agent, Task, Crew
+openai_api_key = get_openai_api_key()
+os.environ["OPENAI_MODEL_NAME"] = 'gpt-3.5-turbo'
+os.environ["SERPER_API_KEY"] = get_serper_api_key()
+os.environ['OPENAI_API_KEY'] = "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"
+from crewai_tools import ScrapeWebsiteTool, SerperDevTool, DirectoryReadTool, FileReadTool
+search_tool = SerperDevTool()
+scrape_tool = ScrapeWebsiteTool()
 
 def pull_jira_issue(jira_user, project_key):
     mongo_url = cfg.mongo_url
@@ -80,5 +93,8 @@ def pull_jira_issue(jira_user, project_key):
     # Close the MongoDB connection
     mongo_client.close()
     return "data pulled successfully"
+
+
+
 
 

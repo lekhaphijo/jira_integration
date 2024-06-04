@@ -6,3 +6,5 @@ mongo_url = 'mongodb://localhost:27017/'  # Update with your MongoDB connection 
 mongo_db_name = 'jira_db'  # Update with your database name
 mongo_collection_name = 'jira_issues'  # Update with your collection name
 project_key = 'innovation'
+OPENAI_API_KEY='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'
+BASE_DIR="/Users/rajesh.kumar3/Desktop/synechron/projects/jira-integration"
