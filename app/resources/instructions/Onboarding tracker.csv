@@ -1,0 +1,5 @@
+,Unnamed: 0,Unnamed: 1,Unnamed: 2,Unnamed: 3,Unnamed: 4,Unnamed: 5,Unnamed: 6,Unnamed: 7,Current State,Unnamed: 9,Unnamed: 10,VDI,Unnamed: 12,Unnamed: 13
+0,EMP. No.,Name,,,Position-,Replacement Of,Onboarding,Project Name,Current State,Laptop,PMO,VDI Expected Date,Aging from expected Date,Actual VDI
+1,,,Skills,Role,New/Replacement,,Intiation date,,,(Y/N),Team,,,Date
+2,,,,,,,,,,,SPOC,,,
+3,123,ABC,"java, SQL",Developer,New,,2024-06-01 00:00:00,Hello World,A,N,TTT,2024-06-06 00:00:00,2024-06-01 00:00:00,TBD

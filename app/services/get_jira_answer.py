@@ -103,13 +103,13 @@ def get_data():
 def get_answer(que):
     json_data_list = get_data()
 
-    directory_read_tool = DirectoryReadTool(directory=f'{cfg.BASE_DIR}/app/resources/instructions/output.json')
+    directory_read_tool = DirectoryReadTool(directory=f'{cfg.BASE_DIR}/app/resources/instructions/')
     file_read_tool = FileReadTool()
     search_tool = SerperDevTool()
     project_manager_agent = Agent(
         role="Project Manager",
-        goal="Monitor and analyze jira issues"
-             "to identify which ticket is has been assigned whome complexity of the tasks",
+        goal="Monitor and analyze jira issues and csv files"
+             "to identify which ticket is has been assigned whom complexity of the tasks and answer the que by observing all files carefully",
         backstory="Specializing in Project Management, this agent "
                   "uses statistical modeling and machine learning "
                   "to provide crucial insights. With a knack for data, "
@@ -123,13 +123,14 @@ def get_answer(que):
     project_management_task = Task(
         description=(
             "Continuously monitor and analyze jira issues"
-            "and try to analyse the {questation} find out the relevent answer from jira issues json data"
+            "answer the questions by observing all the csv files"
+            "and try to analyse the {question} find out the relevant answer from jira issues json data and csv files"
             "Use generative model to "
             "prepare the right answer"
         ),
         expected_output=(
-            "give the relevent answer if you know"
-            "otherwise just say I don't know the answer of your questation {questation}."
+            "give the relevant and specific answer if you know"
+            "otherwise just say I don't know the answer of your question {question}."
         ),
         agent=project_manager_agent,
     )
@@ -151,7 +152,7 @@ def get_answer(que):
 
     )
     inputs = {
-        "questation": que
+        "question": que
     }
     result = project_manager_crew.kickoff(inputs=inputs)
 
